@@ -33,6 +33,26 @@ public class LinkedList {
 			return list;
 		}
 		
+		public static LinkedList delete(LinkedList list, int data) {
+			if(list.head == null) {
+				
+			}else {
+				Node currentNode = list.head; Node previousNode = null;
+				
+				if(currentNode.data == data) {
+					list.head = currentNode.next;
+					return list;
+				}else {
+					while(currentNode.data != data) {
+						previousNode = currentNode;
+						currentNode = currentNode.next;
+					}
+					previousNode.next = currentNode.next;
+				}
+			}
+			return list;
+		}
+		
 		public static void main(String args[]) {
 			LinkedList list = new LinkedList();
 			
