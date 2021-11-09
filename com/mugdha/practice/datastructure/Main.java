@@ -8,5 +8,9 @@ public class Main {
 		//queue.dequeue();
 		
 		queue.printQueue();
+		
+		Stack stack = new Stack(5);
+		
+		stack.pop();
 	}
 }
